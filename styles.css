@@ -1,0 +1,56 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+}
+
+.grid {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    min-height: 70vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.display {
+    grid-column: span 1 / -1;
+    background-color: #353434;
+    color: white; 
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.display .upper-display {
+    font-size: 1.5rem;
+}
+
+.display .lower-display {
+    font-size: 2rem;
+}
+
+.grid > button{
+    cursor: pointer;
+    font-size: 2rem;
+    outline: none;
+    border: 2px solid black;
+    background-color: grey;
+}
+
+.grid > button:hover {
+    background-color: whitesmoke;
+}
+
+.span-2 {
+    grid-column: span 2;
+}
