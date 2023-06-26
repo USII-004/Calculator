@@ -19,7 +19,7 @@ body {
 }
 
 .display {
-    grid-column: span 1 / -1;
+    grid-column: span 4 / -1;
     background-color: #353434;
     color: white; 
     display: flex;
