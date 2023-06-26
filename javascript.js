@@ -185,3 +185,6 @@ let equalButton = document.getElementsByClassName('equal');
 //     calculator.upperDisplay()
 //   })
 // })
+
+
+// this should not be committed

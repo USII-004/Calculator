@@ -8,3 +8,5 @@ let eight = document.getElementById('8');
 function display(num) {
   outputScreen.innerText +=num;
 }
+
+// this should not be committed
