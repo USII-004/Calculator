@@ -13,7 +13,7 @@ body {
     display: grid;
     align-content: center;
     justify-content: center;
-    min-height: 70vh;
+    min-height: 60vh;
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
@@ -29,13 +29,6 @@ body {
     padding: 10px;
     word-wrap: break-word;
     word-break: break-all;
-}
-
-.display .upper-display {
-    font-size: 1.5rem;
-}
-
-.display .lower-display {
     font-size: 2rem;
 }
 
