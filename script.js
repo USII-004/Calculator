@@ -5,6 +5,10 @@ class Calculator {
     this.clear = function() {
       this.currentOperandDisplay.innerText = '';
     }
+    
+    this.delete = function () {
+      this.currentOperandDisplay.innerText = currentOperandDisplay.innerText.slice(0, -1);
+    }
 
     this.appendNumber = function(number) {
       this.currentOperand =  number;
@@ -39,6 +43,7 @@ class Calculator {
 let numberButtons = document.getElementsByClassName('number');
 let operationButtons = document.getElementsByClassName('operation');
 let allClearButton = document.querySelector('.all-clear');
+let deleteButton = document.querySelector('.delete');
 let equalButton = document.querySelector('.equal');
 let percentageButton = document.querySelector('.percentage');
 let currentOperandDisplay = document.querySelector('.display');
@@ -64,6 +69,10 @@ for (let i = 0; i < operationButtons.length; i++) {
 
 allClearButton.addEventListener('click', () => {
   calculator.clear();
+})
+
+deleteButton.addEventListener('click', () => {
+  calculator.delete();
 })
 
 equalButton.addEventListener('click', () => {
